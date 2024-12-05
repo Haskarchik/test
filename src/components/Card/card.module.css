@@ -1,0 +1,72 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
+}
+.blockNumber {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 780px) {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+}
+.number {
+  font-family: "DM Sans", sans-serif;
+  opacity: 0.1;
+  font-size: 200px;
+  font-weight: 700;
+  @media (max-width: 480px) {
+    font-size: 6rem;
+    justify-content: flex-start;
+  }
+}
+
+.line {
+  height: 140px;
+  width: 2px;
+  background-color: #2596be;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
+.blockContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.contentInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 16px;
+  @media (max-width: 780px) {
+    font-size: 36px;
+  }
+}
+
+.description {
+  font-weight: 500;
+  font-size: 18px;
+  color: #7b7b7b;
+  line-height: 24px;
+  @media (max-width: 780px) {
+    font-size: 1rem;
+  }
+}
+.first {
+  opacity: 1;
+}
